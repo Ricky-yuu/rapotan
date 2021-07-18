@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Database\Seeders\MapelSeeder;
 
 class CreateMapelsTable extends Migration
 {
@@ -19,6 +20,9 @@ class CreateMapelsTable extends Migration
             $table->string('id_kelas');
             $table->timestamps();
         });
+
+        $seed = new MapelSeeder ;
+        $seed->run();
     }
 
     /**
