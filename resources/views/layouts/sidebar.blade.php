@@ -46,14 +46,11 @@
         </a>
       </li>
 
-      <li class="active treeview">
-        <a href="#">
+      
+        <a href="{{route ('indexinputnilai') }}">
           <i class="fa fa-dashboard"></i> <span> input Nilai </span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-      </li>
+    
 
       <li class="active treeview">
         <a href="#">

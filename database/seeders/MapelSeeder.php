@@ -189,7 +189,7 @@ DB::table('mapels')->insert([
         'id_kelas' => '104',
  ]);
  
- DB::table('mapels')->insert([
+    DB::table('mapels')->insert([
         'id' => '42',
         'nama_mapel' => 'Bhs Inggris',
         'id_kelas' => '104',
