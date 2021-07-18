@@ -20,7 +20,7 @@
         <a href="#">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
-
+@if(Auth::user()->role == "admin")
 <br><br>
         <a href="{{ route('menampilkankelas')}}">
           <i class="fa fa-dashboard"></i> <span> Data Siswa</span>
@@ -37,14 +37,15 @@
         <a href="#">
           <i class="fa fa-dashboard"></i> <span> Data Nilai </span>
         </a>
-
+@elseif(Auth::user()->role == "guru")
 <br><br>
 
-        <a href="{{route ('indexinputnilai') }}">
+        <a href="{{route ('dataMapel') }}">
           <i class="fa fa-dashboard"></i> <span> input Nilai </span>
         </a>
 
 <br><br>
+@endif
 
       <li class="active treeview">
         <a href="#">

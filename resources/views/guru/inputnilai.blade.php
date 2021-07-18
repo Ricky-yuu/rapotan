@@ -10,6 +10,7 @@
         <th>email</th>
         <th>kelas</th>
         <th>Input Nilai</th>
+        <th>Aksi</th>
     </tr>
 </thead>
     <tbody>
@@ -20,7 +21,15 @@
           <td>{{ $users->name }}</td>
           <td>{{ $users->email }}</td>
           <td>{{ $users->kelas->nama_kelas }}</td>
-          <td> <input type="number" name="nilai"> </td>
+          <form class="" action="{{route('simpanNilai')}}" method="post">
+            @csrf
+          <td>
+              <input type="number" name="nilai" value="">
+              <input type="hidden" name="noinduk" value="{{$users->nomor_induk}}">
+              <input type="hidden" name="mapel" value="{{$idMapel}}">
+          </td>
+          <td> <button type="submit" name="button" class="btn btn-primary">Simpan</button> </td>
+        </form>
         </tr>
         @endforeach
     </tbody>

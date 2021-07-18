@@ -45,4 +45,9 @@ class User extends Authenticatable
     {
       return $this->belongsTo('App\Models\Kelass', 'id_kelas');
     }
+
+    public function nilai()
+    {
+      return $this->belongsToMany('App\Models\Nilai', 'user');
+    }
 }

@@ -26,4 +26,6 @@ Route::get('/kelas', [App\Http\Controllers\AdminController::class, 'kelas'])->na
 
 Route::get('/dataguru', [App\Http\Controllers\DataGuru::class, 'index'])->name('indexguruadmin');
 
-Route::get('/inputnilai', [App\Http\Controllers\InputNilai::class, 'index'])->name('indexinputnilai');
+Route::get('/mapel', [App\Http\Controllers\InputNilai::class, 'index'])->name('dataMapel');
+Route::get('/inputnilai', [App\Http\Controllers\InputNilai::class, 'dataSiswa'])->name('dataSiswa');
+Route::post('/simpanNilai', [App\Http\Controllers\InputNilai::class, 'simpanNilai'])->name('simpanNilai');
