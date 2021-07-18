@@ -21,4 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/datasiswa', [App\Http\Controllers\AdminController::class, 'index'])->name('indexadmin');
+Route::get('/datasiswa', [App\Http\Controllers\AdminController::class, 'index'])->name('indexsiswaadmin');
+Route::get('/dataguru', [App\Http\Controllers\DataGuru::class, 'index'])->name('indexguruadmin');

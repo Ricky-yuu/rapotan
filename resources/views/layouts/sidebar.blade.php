@@ -26,13 +26,13 @@
       </li>
       
   
-        <a href="{{ route('indexadmin')}}">
+        <a href="{{ route('indexsiswaadmin')}}">
           <i class="fa fa-dashboard"></i> <span> Data Siswa</span>
         </a>
     
-
+<br><br>
       
-        <a href="#">
+        <a href="{{ route('indexguruadmin')}}">
           <i class="fa fa-dashboard"></i> <span> Data Guru </span>
         </a>
       

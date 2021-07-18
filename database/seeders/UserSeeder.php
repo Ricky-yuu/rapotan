@@ -20,6 +20,7 @@ class UserSeeder extends Seeder
         'email' => 'ricky aditya@gmail.com',
         'password' => Hash::make('12345678'),
         'role' => 'admin',
+        'id_kelas' => '',
 
         'nomor_induk' => 'E4419',
 
@@ -34,6 +35,8 @@ class UserSeeder extends Seeder
 
         'role' => 'guru',
 
+        'id_kelas' => '1',
+
         'nomor_induk' => 'E5419',
 
       ]);
@@ -46,6 +49,8 @@ class UserSeeder extends Seeder
         'password' => Hash::make('12345678'),
 
         'role' => 'Siswa',
+        
+        'id_kelas' => '1',
 
         'nomor_induk' => '419',
 

@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Database\Seeders\KelasSeeder;
 
 class CreateKelassTable extends Migration
 {
@@ -18,6 +19,9 @@ class CreateKelassTable extends Migration
             $table->string('nama_kelas');
             $table->timestamps();
         });
+
+        $seed = new KelasSeeder ;
+        $seed->run();
     }
 
     /**
