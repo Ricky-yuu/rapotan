@@ -24,6 +24,46 @@
           </span>
         </a>
       </li>
+      
+  
+        <a href="{{ route('indexadmin')}}">
+          <i class="fa fa-dashboard"></i> <span> Data Siswa</span>
+        </a>
+    
+
+      
+        <a href="#">
+          <i class="fa fa-dashboard"></i> <span> Data Guru </span>
+        </a>
+      
+
+      <li class="active treeview">
+        <a href="#">
+          <i class="fa fa-dashboard"></i> <span> Data Nilai </span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+      </li>
+
+      <li class="active treeview">
+        <a href="#">
+          <i class="fa fa-dashboard"></i> <span> input Nilai </span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+      </li>
+
+      <li class="active treeview">
+        <a href="#">
+          <i class="fa fa-dashboard"></i> <span> Profil </span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+      </li>
+
     </ul>
   </section>
   <!-- /.sidebar -->
