@@ -11,18 +11,19 @@
         <th>Nama Siswa</th>
         <th>email</th>
         <th>kelas</th>
-        
+
     </tr>
 </thead>
     <tbody>
-        
+
         @foreach ($user as $users )
-            <td>{{ $loop->iteration }}</td>
-            <td>{{ $users->nomor_induk }}</td>
-            <td>{{ $users->name }}</td>
-            <td>{{ $users->email }}</td>
-            <td>{{ $users->id_kelas }}</td>
-            
+        <tr>
+          <td>{{ $loop->iteration }}</td>
+          <td>{{ $users->nomor_induk }}</td>
+          <td>{{ $users->name }}</td>
+          <td>{{ $users->email }}</td>
+          <td>{{ $users->kelas->nama_kelas }}</td>
+        </tr>
         @endforeach
 
     </tbody>

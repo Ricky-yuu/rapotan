@@ -20,30 +20,30 @@
         <a href="#">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
-      
+
 <br><br>
-        <a href="{{ route('indexdatasiswa')}}">
+        <a href="{{ route('menampilkankelas')}}">
           <i class="fa fa-dashboard"></i> <span> Data Siswa</span>
         </a>
-    
+
 <br><br>
-      
+
         <a href="{{ route('indexguruadmin')}}">
           <i class="fa fa-dashboard"></i> <span> Data Guru </span>
         </a>
-  
+
         <br><br>
 
         <a href="#">
           <i class="fa fa-dashboard"></i> <span> Data Nilai </span>
         </a>
-  
+
 <br><br>
-      
+
         <a href="{{route ('indexinputnilai') }}">
           <i class="fa fa-dashboard"></i> <span> input Nilai </span>
         </a>
-    
+
 <br><br>
 
       <li class="active treeview">
