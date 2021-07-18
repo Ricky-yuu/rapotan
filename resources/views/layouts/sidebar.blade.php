@@ -16,17 +16,13 @@
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
-      <li class="active treeview">
+<br><br>
         <a href="#">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-      </li>
       
-  
-        <a href="{{ route('indexsiswaadmin')}}">
+<br><br>
+        <a href="{{ route('indexdatasiswa')}}">
           <i class="fa fa-dashboard"></i> <span> Data Siswa</span>
         </a>
     
@@ -35,22 +31,20 @@
         <a href="{{ route('indexguruadmin')}}">
           <i class="fa fa-dashboard"></i> <span> Data Guru </span>
         </a>
-      
+  
+        <br><br>
 
-      <li class="active treeview">
         <a href="#">
           <i class="fa fa-dashboard"></i> <span> Data Nilai </span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-      </li>
-
+  
+<br><br>
       
         <a href="{{route ('indexinputnilai') }}">
           <i class="fa fa-dashboard"></i> <span> input Nilai </span>
         </a>
     
+<br><br>
 
       <li class="active treeview">
         <a href="#">

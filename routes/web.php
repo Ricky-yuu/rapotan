@@ -22,6 +22,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/datasiswa', [App\Http\Controllers\AdminController::class, 'index'])->name('indexsiswaadmin');
+Route::get('/kelas', [App\Http\Controllers\AdminController::class, 'index'])->name('menampilkankelas');
+
 Route::get('/dataguru', [App\Http\Controllers\DataGuru::class, 'index'])->name('indexguruadmin');
 
 Route::get('/inputnilai', [App\Http\Controllers\InputNilai::class, 'index'])->name('indexinputnilai');
