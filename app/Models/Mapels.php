@@ -12,6 +12,6 @@ class Mapels extends Model
 
     public function nilai()
     {
-      return $this->belongsToMany('App\Models\Nilai', 'nomor_induk');
+      return $this->hasMany('App\Models\Nilai', 'nomor_induk');
     }
 }

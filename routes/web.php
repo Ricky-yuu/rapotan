@@ -26,6 +26,7 @@ Route::get('/kelas', [App\Http\Controllers\AdminController::class, 'kelas'])->na
 
 Route::get('/nilaisiswa', [App\Http\Controllers\DataNilai::class, 'siswa'])->name('nilaisiswa');
 Route::get('/nilaikelas', [App\Http\Controllers\DataNilai::class, 'kelas'])->name('menampilkannilaikelas');
+Route::get('/detail', [App\Http\Controllers\DataNilai::class, 'detail'])->name('detailnilaikelas');
 
 Route::get('/dataguru', [App\Http\Controllers\DataGuru::class, 'index'])->name('indexguruadmin');
 Route::get('/datanilai', [App\Http\Controllers\InputNilai::class, 'index'])->name('datanilai');
