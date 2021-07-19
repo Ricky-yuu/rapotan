@@ -67,11 +67,16 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.18
-    </div>
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
-    reserved.
+    <div class="container d-md-flex py-4">
+
+        <div class="pull-left hidden-xs">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Raportku 2021</span></strong>. kel2 Tif-Inter'19
+          </div>
+        </div>
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 1.0.0
+      </div>
   </footer>
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->

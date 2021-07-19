@@ -18,30 +18,30 @@
       <li class="header">MAIN NAVIGATION</li>
 <br><br>
         <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          <i class="fa fa-circle"></i> <span>Dashboard</span>
         </a>
 @if(Auth::user()->role == "admin")
 <br><br>
         <a href="{{ route('menampilkankelas')}}">
-          <i class="fa fa-dashboard"></i> <span> Data Siswa</span>
+          <i class="fa fa-circle"></i> <span> Data Siswa</span>
         </a>
 
 <br><br>
 
         <a href="{{ route('indexguruadmin')}}">
-          <i class="fa fa-dashboard"></i> <span> Data Guru </span>
+          <i class="fa fa-circle"></i> <span> Data Guru </span>
         </a>
 
         <br><br>
 
         <a href="{{route ('menampilkannilaikelas')}}">
-          <i class="fa fa-dashboard"></i> <span> Data Nilai </span>
+          <i class="fa fa-circle"></i> <span> Data Nilai </span>
         </a>
 @elseif(Auth::user()->role == "guru")
 <br><br>
 
         <a href="{{route ('dataMapel') }}">
-          <i class="fa fa-dashboard"></i> <span> input Nilai </span>
+          <i class="fa fa-circle"></i> <span> input Nilai </span>
         </a>
 
 <br><br>
@@ -49,9 +49,9 @@
 
 <br><br>
         <a href="#">
-          <i class="fa fa-dashboard"></i> <span> Profil </span>
+          <i class="fa fa-circle"></i> <span> Profil </span>
         </a>
-      
+
 
     </ul>
   </section>
