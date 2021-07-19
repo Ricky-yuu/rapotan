@@ -71,6 +71,52 @@ class UserSeeder extends Seeder
 
       ]);
 
+      DB::table('users')->insert([
+        'name' => 'Bangik',
+
+        'email' => 'Bangik12@gmail.com',
+
+        'password' => Hash::make('12345678'),
+
+        'role' => 'guru',
+
+        'id_kelas' => '104',
+
+        'nomor_induk' => 'E5424',
+
+      ]);
+
+      DB::table('users')->insert([
+        'name' => 'unknows',
+
+        'email' => 'unknows12@gmail.com',
+
+        'password' => Hash::make('12345678'),
+
+        'role' => 'guru',
+
+        'id_kelas' => '105',
+
+        'nomor_induk' => 'E5425',
+
+      ]);
+
+      DB::table('users')->insert([
+        'name' => 'Ricky',
+
+        'email' => 'ricky12@gmail.com',
+
+        'password' => Hash::make('12345678'),
+
+        'role' => 'guru',
+
+        'id_kelas' => '106',
+
+        'nomor_induk' => 'E5426',
+
+      ]);
+
+
 
       DB::table('users')->insert([
         'name' => 'Raihan',
@@ -99,6 +145,82 @@ class UserSeeder extends Seeder
         'id_kelas' => '102',
 
         'nomor_induk' => '413',
+
+      ]);
+
+      
+      DB::table('users')->insert([
+        'name' => 'Roni',
+
+        'email' => 'Roni@gmail.com',
+
+        'password' => Hash::make('12345678'),
+
+        'role' => 'Siswa',
+        
+        'id_kelas' => '102',
+
+        'nomor_induk' => '417',
+
+      ]);
+
+      DB::table('users')->insert([
+        'name' => 'Rizad',
+
+        'email' => 'Rizad@gmail.com',
+
+        'password' => Hash::make('12345678'),
+
+        'role' => 'Siswa',
+        
+        'id_kelas' => '103',
+
+        'nomor_induk' => '418',
+
+      ]);
+
+      DB::table('users')->insert([
+        'name' => 'Rezad',
+
+        'email' => 'Rezad@gmail.com',
+
+        'password' => Hash::make('12345678'),
+
+        'role' => 'Siswa',
+        
+        'id_kelas' => '104',
+
+        'nomor_induk' => '490',
+
+      ]);
+
+      DB::table('users')->insert([
+        'name' => 'Rodszad',
+
+        'email' => 'Redazad@gmail.com',
+
+        'password' => Hash::make('12345678'),
+
+        'role' => 'Siswa',
+        
+        'id_kelas' => '105',
+
+        'nomor_induk' => '420',
+
+      ]);
+
+      DB::table('users')->insert([
+        'name' => 'Rehsdzad',
+
+        'email' => 'Rezaascd@gmail.com',
+
+        'password' => Hash::make('12345678'),
+
+        'role' => 'Siswa',
+        
+        'id_kelas' => '106',
+
+        'nomor_induk' => '480',
 
       ]);
 

@@ -24,7 +24,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/datasiswa', [App\Http\Controllers\AdminController::class, 'siswa'])->name('indexsiswaadmin');
 Route::get('/kelas', [App\Http\Controllers\AdminController::class, 'kelas'])->name('menampilkankelas');
 
+Route::get('/nilaisiswa', [App\Http\Controllers\DataNilai::class, 'siswa'])->name('nilaisiswa');
+Route::get('/nilaikelas', [App\Http\Controllers\DataNilai::class, 'kelas'])->name('menampilkannilaikelas');
+
 Route::get('/dataguru', [App\Http\Controllers\DataGuru::class, 'index'])->name('indexguruadmin');
+Route::get('/datanilai', [App\Http\Controllers\InputNilai::class, 'index'])->name('datanilai');
 
 Route::get('/mapel', [App\Http\Controllers\InputNilai::class, 'index'])->name('dataMapel');
 Route::get('/inputnilai', [App\Http\Controllers\InputNilai::class, 'dataSiswa'])->name('dataSiswa');

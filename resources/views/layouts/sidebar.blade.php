@@ -34,7 +34,7 @@
 
         <br><br>
 
-        <a href="#">
+        <a href="{{route ('menampilkannilaikelas')}}">
           <i class="fa fa-dashboard"></i> <span> Data Nilai </span>
         </a>
 @elseif(Auth::user()->role == "guru")
@@ -47,14 +47,11 @@
 <br><br>
 @endif
 
-      <li class="active treeview">
+<br><br>
         <a href="#">
           <i class="fa fa-dashboard"></i> <span> Profil </span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-      </li>
+      
 
     </ul>
   </section>
