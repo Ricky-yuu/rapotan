@@ -15,7 +15,7 @@
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li class="header">MAIN NAVIGATION</li>
+      <li class="header">Menu</li>
 <br><br>
         <a href="#">
           <i class="fa fa-circle"></i> <span>Dashboard</span>
