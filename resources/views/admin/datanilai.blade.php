@@ -24,7 +24,7 @@
           <td>{{ $users->name }}</td>
           <td>{{ $users->email }}</td>
           <td>{{ $users->kelas->nama_kelas }}</td>
-          <td> <a href="" class="btn btn-sn. btn-success">Lihat Nilai</a> </td>
+          <td> <a href="{{route('detailnilaikelas', ['noinduk' => $users->nomor_induk])}}" class="btn btn-sn. btn-success">Lihat Nilai</a> </td>
         </tr>
         @endforeach
 
