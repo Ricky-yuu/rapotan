@@ -1,121 +1,179 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="{{asset('template/bootstrap/dist/css/bootstrap.min.css')}}">
-    <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{asset('template/font-awesome/css/font-awesome.min.css')}}">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{asset('template/dist/css/AdminLTE.min.css')}}">
-  <link rel="stylesheet" href="{{asset('template/font-awesome/css/font-awesome.min.css')}}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Rapotku </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="{{asset('templates')}}/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{asset('templates')}}/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="{{asset('template/Ionicons/css/ionicons.min.css')}}">
+  <link rel="stylesheet" href="{{asset('templates')}}/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{asset('template/dist/css/AdminLTE.min.css')}}">
+  <link rel="stylesheet" href="{{asset('templates')}}/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="{{asset('template/dist/css/skins/_all-skins.min.css')}}">
-  <!-- Morris chart -->
-  <link rel="stylesheet" href="{{asset('template/morris.js/morris.css')}}">
-  <!-- jvectormap -->
-  <link rel="stylesheet" href="{{asset('template/jvectormap/jquery-jvectormap.css')}}">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="{{asset('template/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="{{asset('template/bootstrap-daterangepicker/daterangepicker.css')}}">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="{{asset('template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
+  <link rel="stylesheet" href="{{asset('templates')}}/dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body>
+<body class="hold-transition skin-blue sidebar-mini">
+<!-- Site wrapper -->
 <div class="wrapper">
 
-  @include('layouts.navbar')
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="../../index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">{{ Auth::user()->role }}</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
 
-  @include('layouts.sidebar')
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+    
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="{{asset('templates')}}/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">{{ Auth::user()->name }}</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="{{asset('templates')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  {{ Auth::user()->name }} - {{ Auth::user()->email }}
+                  <small>Dibuat pada Agustus 2021</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+           
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                
+                <div class="pull-right">
+                    <a class="btn btn-default btn-flat" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sign out</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="{{asset('templates')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>{{ Auth::user()->name }}</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+     
+      @include('layouts.navbar') 
+
+
+
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- =============================================== -->
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
-    </section>
 
     <!-- Main content -->
     <section class="content">
-      @yield('content')
+
+      <!-- Default box -->
+     @yield('content')
+      <!-- /.box -->
+
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="container d-md-flex py-4">
 
-        <div class="pull-left hidden-xs">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Raportku 2021</span></strong>. kel2 Tif-Inter'19
-          </div>
-        </div>
-        <div class="pull-right hidden-xs">
-          <b>Version</b> 1.0.0
-      </div>
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 1.1.0
+    </div>
+    <strong>Copyright &copy; 2021 </strong>Semoga Bermanfaat
   </footer>
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+
+ 
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-</body>
+
 <!-- jQuery 3 -->
-<script src="{{asset('template/jquery/dist/jquery.min.js')}}"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="{{asset('template/jquery-ui/jquery-ui.min.js')}}"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<!-- Morris.js charts -->
-<script src="{{asset('template/raphael/raphael.min.js')}}"></script>
-<script src="{{asset('template/morris.js/morris.min.js')}}"></script>
-<!-- Sparkline -->
-<script src="{{asset('template/jquery-sparkline/dist/jquery.sparkline.min.js')}}"></script>
-<!-- jvectormap -->
-<script src="{{asset('template/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
-<script src="{{asset('template/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
-<!-- jQuery Knob Chart -->
-<script src="{{asset('template/jquery-knob/dist/jquery.knob.min.js')}}"></script>
-<!-- daterangepicker -->
-<script src="{{asset('template/moment/min/moment.min.js')}}"></script>
-<script src="{{asset('template/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
-<!-- datepicker -->
-<script src="{{asset('template/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="{{asset('template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
-<!-- Slimscroll -->
-<script src="{{asset('template/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
-<!-- FastClick -->
-<script src="{{asset('template/fastclick/lib/fastclick.js')}}"></script>
+<script src="{{asset('templates')}}/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="{{asset('template/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('templates')}}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="{{asset('templates')}}/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="{{asset('templates')}}/bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="{{asset('template/dist/js/adminlte.min.js')}}"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{asset('template/dist/js/pages/dashboard.js')}}"></script>
+<script src="{{asset('templates')}}/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{asset('template/dist/js/demo.js')}}"></script>
+<script src="{{asset('templates')}}/dist/js/demo.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.sidebar-menu').tree()
+  })
+</script>
+</body>
 </html>
