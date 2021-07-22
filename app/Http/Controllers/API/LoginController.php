@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\QueryException;
 
 class LoginController extends Controller
 {
@@ -20,41 +21,46 @@ class LoginController extends Controller
 
 
 
-        } catch (\Throwable $th) {
-            return response()->json([
-                'message' => 'gagal validasi data',
-            ], 401);
-        }
-       
-
-        $user = User::where('email', $request->email)->first();
-
-        if(!$user || !Hash::check($request->password, $user->password)){
-            return response()->json([
-                'message' => 'email atau password tidak valid',
-            ], 401);
-        }
-
-        $token = $user->createToken('authToken')->plainTextToken;
-
-        return response()->json([
-            'message' => 'success login',
-            'id' => $user->id,
-            'username' => $user->email,
-            'token' => $token,
-        ], 200);
+            
+            
+            $user = User::where('email', $request->email)->first();
+            
+            if($user != null && Hash::check($request->password, $user->password)){
+                $token = $user->createToken($user->email,['role:siswa']);
+                return response()->json([
+                    "message" => 'succcess',
+                    "data" => $user,
+                    "token" => $token->plainTextToken
+                    ])->setStatusCode(200);
+                }
+                
+                else{
+                    return response()->json([
+                        "message"=>'email or password is wrong'
+                        ])->setStatusCode(401);
+                    }
+                    
+                } catch (QueryException $err) {
+                    return response()->json([
+                        'message' => 'gagal validasi data',
+                    ], 401);
+                }
+                   
     }
 
-    // public function logout(Request $request)
-    // {
-    //     $user = $request->user();
-    //     $user->currentAccessToken()->delete();
-    //     auth()->user()->tokens()->delete();
-
-    //     return response()->json([
-    //         'message' => 'You are Logout.'
-    //     ], 200);
-    // }
+    public function logout(Request $request)
+    {
+        {
+            $removeToken = $request->user()->tokens()->delete();
+    
+            if ($removeToken) {
+                return response()->json([
+                    'success' => true,
+                    'message' => 'Logout Berhasil!',
+                ]);
+            }
+        }
+    }
 
     
 
