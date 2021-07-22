@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\LoginController;
+use App\Http\Controllers\API\NilaiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +24,6 @@ Route::post('login', [LoginController::class, 'login']);
 
 Route::middleware(['auth:sanctum'])->group(function() {
     Route::post('logout', [LoginController::class, 'logout']);
+    Route::get('detail', [NilaiController::class, 'detail']);
 });
+
