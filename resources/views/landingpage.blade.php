@@ -68,8 +68,7 @@
         <div class="container" data-aos="fade-up">
 
           <div class="section-title">
-            <h2>About</h2>
-            <p>About Us</p>
+            <p>Raportku</p>
           </div>
 
           <div class="row">
@@ -77,18 +76,17 @@
               <img src="{{ asset('frontend/assets/img/abouts.png')}}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+              <h3>Sistem Informasi Berbasis Webside dan Android.</h3>
               <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Rapotku adalah Sistem Informasi yang bertujuan untuk memudahkan dalam pengarsipan Nilai sekolah SD .
               </p>
               <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="icofont-check-circled"></i> Aplikasi yang mudah dipahamai.</li>
+                <li><i class="icofont-check-circled"></i> Aplikasi yang memudahkan dalam pengarsipan Nilai.</li>
+                <li><i class="icofont-check-circled"></i> Terdapat Informasi Sekolah </li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                Semoga Aplikasi Raportku bisa bermanfaat untuk sekolah SD yang menggunakan
               </p>
             </div>
           </div>
@@ -191,12 +189,12 @@
           <div class="row" data-aos="zoom-in" data-aos-delay="100">
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div class="member">
-                <img src="{{ asset('frontend/assets/img/trainers/trainer-1.jpg')}}" class="img-fluid" alt="">
+                <img src="{{ asset('frontend/assets/img/trainers/ricky.jpg')}}" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Walter White</h4>
+                  <h4>Ricky Aditya Wardana</h4>
                   <span>Web Development</span>
                   <p>
-                    Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                    Ricky Aditya Wardana Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Webside 
                   </p>
                   <div class="social">
                     <a href=""><i class="icofont-twitter"></i></a>
@@ -210,12 +208,12 @@
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div class="member">
-                <img src="{{ asset('frontend/assets/img/trainers/trainer-2.jpg')}}" class="img-fluid" alt="">
+                <img src="{{ asset('frontend/assets/img/trainers/sulis.jpeg')}}" width="260px" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Sarah Jhinson</h4>
-                  <span>Marketing</span>
+                  <h4>Sulistyawati</h4>
+                  <span>Frontend Web Development</span>
                   <p>
-                    Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                    Sulistyawati Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Frontend Webside 
                   </p>
                   <div class="social">
                     <a href=""><i class="icofont-twitter"></i></a>
@@ -229,12 +227,12 @@
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div class="member">
-                  <img src="{{ asset('frontend/assets/img/trainers/trainer-2.jpg')}}" class="img-fluid" alt="">
+                  <img src="{{ asset('frontend/assets/img/trainers/trainer-1.jpg')}}" width="260px" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4>Sarah Jhinson</h4>
-                    <span>Marketing</span>
+                    <h4>Raihan Dinul Haq</h4>
+                    <span>Android Development</span>
                     <p>
-                      Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                      Raihan Dinul Haq Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Android Development 
                     </p>
                     <div class="social">
                       <a href=""><i class="icofont-twitter"></i></a>
@@ -245,6 +243,28 @@
                   </div>
                 </div>
               </div>
+
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                    <img src="{{ asset('frontend/assets/img/trainers/trainer-3.jpg')}}" class="img-fluid" alt="">
+                    <div class="member-content">
+                      <h4>Aditya Setya Nugraha</h4>
+                      <span>Android Development</span>
+                      <p>
+                        Aditya Setya Nugraha Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Android Development 
+                      </p>
+                      <div class="social">
+                        <a href=""><i class="icofont-twitter"></i></a>
+                        <a href=""><i class="icofont-facebook"></i></a>
+                        <a href=""><i class="icofont-instagram"></i></a>
+                        <a href=""><i class="icofont-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+
 
           </div>
 
