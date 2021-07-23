@@ -57,7 +57,7 @@
       <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
         <h1>Learn For<br>The Future</h1>
         <h2>Dapatkan aplikasi Raportku dan lihat hasil belajarmu di sini</h2>
-        <a href="courses.html" class="btn-get-started">Download Here</a>
+        <a href="https://drive.google.com/drive/folders/1qzOad6OrZcM9CQpRB4-1DTs6LsVvpdxj?usp=sharing" class="btn-get-started">Download Here</a>
       </div>
     </section><!-- End Hero -->
 
@@ -194,7 +194,7 @@
                   <h4>Ricky Aditya Wardana</h4>
                   <span>Web Development</span>
                   <p>
-                    Ricky Aditya Wardana Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Webside 
+                    Ricky Aditya Wardana Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Webside
                   </p>
                   <div class="social">
                     <a href=""><i class="icofont-twitter"></i></a>
@@ -213,7 +213,7 @@
                   <h4>Sulistyawati</h4>
                   <span>Frontend Web Development</span>
                   <p>
-                    Sulistyawati Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Frontend Webside 
+                    Sulistyawati Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Frontend Webside
                   </p>
                   <div class="social">
                     <a href=""><i class="icofont-twitter"></i></a>
@@ -232,7 +232,7 @@
                     <h4>Raihan Dinul Haq</h4>
                     <span>Android Development</span>
                     <p>
-                      Raihan Dinul Haq Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Android Development 
+                      Raihan Dinul Haq Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Android Development
                     </p>
                     <div class="social">
                       <a href=""><i class="icofont-twitter"></i></a>
@@ -252,7 +252,7 @@
                       <h4>Aditya Setya Nugraha</h4>
                       <span>Android Development</span>
                       <p>
-                        Aditya Setya Nugraha Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Android Development 
+                        Aditya Setya Nugraha Mahasiswa dari Politeknik Negeri Jember Semester 4 yang bekerja di bagian Android Development
                       </p>
                       <div class="social">
                         <a href=""><i class="icofont-twitter"></i></a>
@@ -263,7 +263,7 @@
                     </div>
                   </div>
                 </div>
-  
+
 
 
           </div>
