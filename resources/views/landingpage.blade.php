@@ -227,7 +227,7 @@
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div class="member">
-                  <img src="{{ asset('frontend/assets/img/trainers/trainer-1.jpg')}}" width="260px" class="img-fluid" alt="">
+                  <img src="{{ asset('frontend/assets/img/trainers/raihan.jpg')}}" width="230px" class="img-fluid" alt="">
                   <div class="member-content">
                     <h4>Raihan Dinul Haq</h4>
                     <span>Android Development</span>
@@ -247,7 +247,7 @@
 
               <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                 <div class="member">
-                    <img src="{{ asset('frontend/assets/img/trainers/trainer-3.jpg')}}" class="img-fluid" alt="">
+                    <img src="{{ asset('frontend/assets/img/trainers/adit.jpg')}}" class="img-fluid" alt="">
                     <div class="member-content">
                       <h4>Aditya Setya Nugraha</h4>
                       <span>Android Development</span>

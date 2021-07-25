@@ -29,7 +29,7 @@ class DataNilai extends Controller
     
     public function detail(Request $request)
     {
-      $mapel = Nilai::where('id_user', $request->input('noinduk'))->get();
-      return view('admin.detailnilai', compact('mapel'));
+      $nilai = Nilai::where('id_user', $request->input('noinduk'))->get();
+      return view('admin.detailnilai', compact('nilai'));
     }
 }

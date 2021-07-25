@@ -26,6 +26,7 @@ class InputNilai extends Controller
 
     public function simpanNilai(Request $request)
     {
+      
       $simpan = Nilai::create([
         'id_user' => $request->noinduk,
         'id_mapel' => $request->mapel,

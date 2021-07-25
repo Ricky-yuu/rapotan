@@ -21,6 +21,6 @@ class Nilai extends Model
 
     public function mapel()
     {
-      return $this->hasMany('App\Models\Mapels');
+      return $this->belongsTo('App\Models\Mapels','id_mapel');
     }
 }

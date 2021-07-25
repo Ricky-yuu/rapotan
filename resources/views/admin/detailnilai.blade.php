@@ -15,11 +15,11 @@
 </thead>
     <tbody>
 
-        @foreach ($mapel as $users )
+        @foreach ($nilai as $users )
         <tr>
           <td>{{ $loop->iteration }}</td>
           <td>{{ $users->id_user }}</td>
-          <td>{{ $users->id_mapel }}</td>
+          <td>{{ $users->mapel->nama_mapel }}</td>
           <td>{{ $users->nilai }}</td>
         </tr>
         @endforeach
